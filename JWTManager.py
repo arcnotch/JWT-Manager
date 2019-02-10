@@ -122,13 +122,23 @@ def Example(JWTInstance):
     print("==============================================")
 
 def main():
+    Opening()
     jwtman = JWTManager()
     jwtman.RSA()
-    #jwtman.Example()
-    #jwtman.Symetric()
-    #jwtman.Example()
-    print(jwtman.Authentication("Yarden","aLGJskalk23@!"))
+    jwtman.Example()
+    jwtman.Symetric()
+    jwtman.Example()
     
+def Opening():
+    string = '''      ___          _________ __  __                                   
+     | \ \        / /__   __|  \/  |                                  
+     | |\ \  /\  / /   | |  | \  / | __ _ _ __   __ _  __ _  ___ _ __ 
+ _   | | \ \/  \/ /    | |  | |\/| |/ _` | '_ \ / _` |/ _` |/ _ \ '__|
+| |__| |  \  /\  /     | |  | |  | | (_| | | | | (_| | (_| |  __/ |   
+ \____/    \/  \/      |_|  |_|  |_|\__,_|_| |_|\__,_|\__, |\___|_|   
+                                                       __/ |          
+                                                      |___/           '''
+    print(string)
     
 
 if __name__ == '__main__':
